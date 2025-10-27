@@ -1,2 +1,7 @@
 # Filter Spasial
 Filter spasial merupakan teknik fundamental yang bekerja secara langsung pada nilai piksel citra dan lingkungannya (atau neighborhood) untuk memodifikasi atau meningkatkan citra. Secara esensial, proses ini melibatkan penggunaan sebuah masker (atau kernel atau template), yaitu matriks kecil berisi bobot, yang 'disapu' atau dikonvolusikan di atas citra. Untuk setiap posisi piksel, nilai piksel baru dihitung sebagai jumlah tertimbang dari nilai piksel asli dan piksel-piksel tetangganya, dengan bobot yang ditentukan oleh masker. Filter spasial dikategorikan menjadi dua jenis utama: filter penghalus (smoothing/low-pass), yang bertujuan untuk mengurangi noise dan detail halus, sering kali menggunakan rata-rata lingkungan piksel; dan filter penajam (sharpening/high-pass), yang berfungsi untuk menonjolkan tepi dan detail dengan menekankan perbedaan nilai piksel, umumnya menggunakan bobot yang menghasilkan kontras tinggi. Penerapan filter spasial sangat vital dalam berbagai aplikasi, mulai dari pra-pemrosesan citra untuk noise reduction hingga ekstraksi fitur seperti pendeteksian tepi.
+# Contoh
+Pada file <a href="https://github.com/AuroScarlett/filter-spasial/blob/main/spasial.ipynb">spasial.ipynb</a> terdapat contoh kode Filter Laplacian untuk penajaman dan Sobel untuk pendeteksian tepi, menggunakan pustaka <code>scipy.ndimage.convole</code> dan <code>skimage</code>.
+<br>
+Dengan hasil seperti berikut:
+![laplacian_sobel_result](https://github.com/AuroScarlett/filter-spasial/blob/main/Result-Spacial.png)
